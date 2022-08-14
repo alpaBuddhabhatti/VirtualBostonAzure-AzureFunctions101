@@ -14,37 +14,26 @@
 			],
 			"sinks": [
 				{
-					"linkedService": {
-						"referenceName": "LS_ABLB",
-						"type": "LinkedServiceReference"
-					},
 					"name": "sink1"
 				}
 			],
 			"transformations": [],
 			"scriptLines": [
-				"source(allowSchemaDrift: true,",
+				"source(output(",
+				"          catalog as (book as ({@id} as string, author as string, description as string, genre as string, price as double, publish_date as date, title as string)[])",
+				"     ),",
+				"     allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false,",
 				"     validationMode: 'none',",
 				"     namespaces: true) ~> source1",
-				"source1 sink(allowSchemaDrift: false,",
-				"     validateSchema: false,",
-				"     entity: '',",
-				"     format: 'cdm',",
-				"     manifestType: 'manifest',",
-				"     folderPath: '',",
-				"     fileSystem: '',",
-				"     columnNamesAsHeader: false,",
-				"     columnDelimiter: ',',",
-				"     quoteChar: '\\\"',",
-				"     escapeChar: '\\\\',",
-				"     truncate: false,",
-				"     umask: 0022,",
-				"     preCommands: [],",
-				"     postCommands: [],",
+				"source1 sink(validateSchema: false,",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     store: 'cache',",
+				"     format: 'inline',",
+				"     output: true,",
+				"     saveOrder: 1) ~> sink1"
 			]
 		}
 	}
