@@ -54,7 +54,7 @@
 					"headers": {
 						"x-ms-version": "2017-11-09",
 						"x-ms-blob-type": "BlockBlob",
-						"CONTENT-TYPE": "application/xml"
+						"CONTENT-TYPE": "text/xml"
 					},
 					"body": {
 						"value": "@activity('Data flow1').output",
