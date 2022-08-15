@@ -62,7 +62,7 @@
 					},
 					"authentication": {
 						"type": "MSI",
-						"resource": "https:/https://storage.azure.com//StorageAccount.com/"
+						"resource": "https:/https://storage.azure.com/"
 					}
 				}
 			}
