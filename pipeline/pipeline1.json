@@ -54,6 +54,10 @@
 					"body": {
 						"value": "@activity('Data flow1').output",
 						"type": "Expression"
+					},
+					"authentication": {
+						"type": "MSI",
+						"resource": "https://StorageAccount.com/"
 					}
 				}
 			}
