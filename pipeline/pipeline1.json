@@ -51,13 +51,18 @@
 				"typeProperties": {
 					"url": "https://dlgstor.blob.core.windows.net/test/test.xml",
 					"method": "PUT",
+					"headers": {
+						"x-ms-version": "2017-11-09",
+						"x-ms-blob-type": "BlockBlob",
+						"CONTENT-TYPE": "application/xml"
+					},
 					"body": {
 						"value": "@activity('Data flow1').output",
 						"type": "Expression"
 					},
 					"authentication": {
 						"type": "MSI",
-						"resource": "https://StorageAccount.com/"
+						"resource": "https:/https://storage.azure.com//StorageAccount.com/"
 					}
 				}
 			}
