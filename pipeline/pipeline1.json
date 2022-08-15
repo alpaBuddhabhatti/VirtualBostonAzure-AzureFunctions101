@@ -57,7 +57,7 @@
 						"CONTENT-TYPE": "text/xml"
 					},
 					"body": {
-						"value": "@activity('Data flow1').output.runStatus.output.CacheCases.value\n",
+						"value": "@activity('Data flow1').output.runStatus.output.sink1.value\n",
 						"type": "Expression"
 					},
 					"authentication": {
