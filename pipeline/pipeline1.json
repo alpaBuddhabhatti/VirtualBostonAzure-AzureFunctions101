@@ -49,8 +49,8 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://dlgstor.blob.core.windows.net/source/test.xml",
-					"method": "POST",
+					"url": "https://dlgstor.blob.core.windows.net/test/test.xml",
+					"method": "PUT",
 					"body": {
 						"value": "@activity('Data flow1').output",
 						"type": "Expression"
