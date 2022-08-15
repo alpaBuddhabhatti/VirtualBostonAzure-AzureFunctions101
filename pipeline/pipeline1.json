@@ -57,7 +57,7 @@
 						"CONTENT-TYPE": "text/xml"
 					},
 					"body": {
-						"value": "@activity('Data flow1').output",
+						"value": "@activity('Data flow1').output.value",
 						"type": "Expression"
 					},
 					"authentication": {
