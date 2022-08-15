@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-dev-replydemo"
+		},
+		"AzureBlobStorage1_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_connectionString": {
+			"value": ""
+		},
+		"LS_ABLB_accountKey": {
+			"value": ""
+		},
+		"LS_ABLB_properties_typeProperties_url": {
+			"value": "https://dlgstor.dfs.core.windows.net/"
+		},
+		"LS_AFUN_properties_typeProperties_functionAppUrl": {
+			"value": "https://azdev-azdev-asp-demo2022-funapp.azurewebsites.net"
+		},
+		"LS_KEYVAULT_properties_typeProperties_baseUrl": {
+			"value": "https://kv-db-demo.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
