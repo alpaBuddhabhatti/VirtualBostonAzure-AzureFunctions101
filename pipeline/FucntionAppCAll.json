@@ -24,6 +24,10 @@
 						"value": "{\n\"name\": \"Reply Show Me How - Azure Fucntions 101\"\n}",
 						"type": "Expression"
 					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_AFUN",
+					"type": "LinkedServiceReference"
 				}
 			},
 			{
